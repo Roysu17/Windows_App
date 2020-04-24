@@ -14,59 +14,66 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>80</y>
-      <width>401</width>
-      <height>201</height>
+      <x>280</x>
+      <y>160</y>
+      <width>651</width>
+      <height>291</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="tabletTracking">
-     <bool>true</bool>
-    </property>
-    <property name="locale">
-     <locale language="English" country="Canada"/>
-    </property>
-   </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>50</y>
-      <width>401</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="tabletTracking">
-     <bool>false</bool>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="locale">
-     <locale language="English" country="UnitedStates"/>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-    <property name="plainText">
-     <string>Make Changes to the Calender</string>
-    </property>
-    <property name="backgroundVisible">
-     <bool>true</bool>
-    </property>
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" rowminimumheight="0,0,0,0">
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="passwordtext"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="SignIn">
+       <property name="text">
+        <string>Sign In</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="accountName">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Account Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="accounttext"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Password">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>32</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="SignUp">
+       <property name="text">
+        <string>Sign Up</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -78,14 +85,47 @@
      <height>25</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuCalender_side">
+   <widget class="QMenu" name="menuSign_In">
     <property name="title">
-     <string>Calender side</string>
+     <string>Sign In</string>
     </property>
+    <addaction name="actionExit"/>
+    <addaction name="actionSave_account"/>
    </widget>
-   <addaction name="menuCalender_side"/>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionWebsite"/>
+    <addaction name="actionDocuments"/>
+   </widget>
+   <addaction name="menuSign_In"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionSave_account">
+   <property name="text">
+    <string>Save account</string>
+   </property>
+  </action>
+  <action name="actionWebsite">
+   <property name="text">
+    <string>Website</string>
+   </property>
+  </action>
+  <action name="actionDocuments">
+   <property name="text">
+    <string>Documents</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
