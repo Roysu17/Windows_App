@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,16 +20,16 @@
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>160</y>
-      <width>651</width>
-      <height>291</height>
+      <x>420</x>
+      <y>270</y>
+      <width>351</width>
+      <height>151</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" rowminimumheight="0,0,0,0">
+    <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0" rowminimumheight="0,0,0">
      <item row="1" column="1">
       <widget class="QLineEdit" name="passwordtext"/>
      </item>
@@ -42,7 +45,7 @@
        <property name="font">
         <font>
          <family>Arial</family>
-         <pointsize>32</pointsize>
+         <pointsize>16</pointsize>
         </font>
        </property>
        <property name="text">
@@ -58,7 +61,7 @@
        <property name="font">
         <font>
          <family>Arial</family>
-         <pointsize>32</pointsize>
+         <pointsize>16</pointsize>
         </font>
        </property>
        <property name="text">
@@ -82,7 +85,7 @@
      <x>0</x>
      <y>0</y>
      <width>1920</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSign_In">
