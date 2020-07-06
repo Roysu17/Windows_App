@@ -8,6 +8,12 @@
 #include <QWindow>
 #include <QDesktopWidget>
 #include <QApplication>
+#include <QSize>
+#include <QDesktopWidget>
+#include <QDebug>
+#include <QStyle>
+#include <QScreen>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +26,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void centerAndResize();
+
+   void centerAndResize();
     
 
 private slots:
