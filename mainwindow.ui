@@ -13,6 +13,11 @@
     <height>422</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Agency FB</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -85,7 +90,7 @@
      <x>0</x>
      <y>0</y>
      <width>371</width>
-     <height>25</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSign_In">

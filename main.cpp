@@ -1,3 +1,4 @@
+#include "calendar.h"
 #include "mainwindow.h"
 #include <QApplication>
 #include <QWindow>
@@ -6,9 +7,12 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    Calendar c;
+    c.show();
     MainWindow w;
     w.show();
     return a.exec();
+    /*
     MainWindow::centerAndResize() {
         // get the dimension available on this screen
         QSize availableSize = qApp->desktop()->availableGeometry().size();
@@ -29,5 +33,5 @@ int main(int argc, char *argv[])
             )
         );
     }
-
+    */
 }

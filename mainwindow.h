@@ -7,10 +7,31 @@
 #include <QPushButton>
 #include <QWindow>
 #include <QDesktopWidget>
+#include <QApplication>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+    void centerAndResize();
+    
+
+private slots:
+    void on_SignIn_clicked();
+
+private:
+    Ui::MainWindow *ui;
+    void loadTextFile();
+};
+
+/*
 
 void MainWindow::centerAndResize() {
     // get the dimension available on this screen
@@ -31,23 +52,7 @@ void MainWindow::centerAndResize() {
             qApp->desktop()->availableGeometry()
         )
     );
-}
-
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-
-
-private slots:
-    void on_SignIn_clicked();
-
-private:
-    Ui::MainWindow *ui;
-    void loadTextFile();
-};
+}*/
 
 #endif // MAINWINDOW_H
+
