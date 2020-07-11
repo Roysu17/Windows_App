@@ -14,6 +14,8 @@
 #include <QStyle>
 #include <QScreen>
 #include <QWidget>
+#include <QPushButton>
+#include <QHBoxLayout>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,6 +33,7 @@ public:
     
 
 private slots:
+
     void on_SignIn_clicked();
 
 private:
