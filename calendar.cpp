@@ -12,6 +12,8 @@ Calendar::~Calendar()
     delete ui;
 }
 
+
+
 /*
 void Calendar::centerAndResize() {
     // get the dimension available on this screen
