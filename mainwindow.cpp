@@ -39,7 +39,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_SignIn_clicked()
 {
-    // After server interaction, clicking sign-in button, menu of BLUEBOOK should pop up as new window
-    Menu Menu;
-    Menu.show();
+    // User confirmation -> server interaction -> open Menu
+
+
+
 }

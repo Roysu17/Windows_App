@@ -1,6 +1,9 @@
 <ui version="4.0">
+ <author/>
+ <comment/>
+ <exportmacro/>
  <class>Menu</class>
- <widget name="Menu" class="QDockWidget">
+ <widget name="Menu" class="QWidget">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,8 +13,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>DockWidget</string>
+   <string>Form</string>
   </property>
-  <widget name="dockWidgetContents" class="QWidget"/>
  </widget>
+ <pixmapfunction/>
+ <connections/>
 </ui>
