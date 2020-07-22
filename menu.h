@@ -15,6 +15,11 @@ public:
     explicit Menu(QWidget *parent = nullptr);
     ~Menu();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_Menu_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::Menu *ui;
 };

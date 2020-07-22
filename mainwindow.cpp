@@ -41,6 +41,12 @@ void MainWindow::on_SignIn_clicked()
 {
     // User confirmation -> server interaction -> open Menu
 
-
+    // if(recv(CONFIRMATION){
+    //      QWidget *menu = new QWidget;
+    //      menu->show();
+    //      hide();
+    QWidget *menu = new QWidget;
+    menu->show();
+    hide();
 
 }
