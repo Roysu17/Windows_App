@@ -1,6 +1,6 @@
 #include "menu.h"
 #include "ui_menu.h"
-#include "calendar.h"
+#include "QPushButton"
 
 Menu::Menu(QWidget *parent) :
     QWidget(parent),
@@ -14,13 +14,10 @@ Menu::~Menu()
     delete ui;
 }
 
+
+
+
 void Menu::on_pushButton_clicked()
-{
-
-
-}
-
-void Menu::on_Menu_customContextMenuRequested(const QPoint &pos)
 {
 
 }

@@ -16,14 +16,14 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>100</y>
-     <width>131</width>
-     <height>71</height>
+     <x>160</x>
+     <y>150</y>
+     <width>80</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Calendar</string>
+    <string>Calender </string>
    </property>
   </widget>
  </widget>
